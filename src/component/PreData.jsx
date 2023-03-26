@@ -3,7 +3,7 @@ const PreData = ({setPreData}) => {
         setPreData(e.target.value);
     };
     return (
-        <textarea onChange={handleChange} />
+        <textarea onKeyUp={handleChange} />
     );
 };
 
