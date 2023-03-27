@@ -10,11 +10,8 @@ const Main = () => {
     const [dpl, setDpl] = useState(
         DPL
         .create(DPL.TYPE.START)
-        .appendNext(DPL.create(DPL.TYPE.MODIFIER, e => e + 2))
-        .appendNext(DPL.create(DPL.TYPE.MODIFIER, e => e * 5))
     );
-    //{ type: 'modifier', contents: e => e + 2, next: { type: 'modifier', contents: e => e * 2, next: { type: 'end' } } }
-
+    
     useEffect(() => {
         if(!preData.trim()){
             setAfterData([]);

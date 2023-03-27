@@ -12,6 +12,7 @@ export default class DPL {
         this.type = type;
         this.contents = contents;
         this.next = next;
+        this.insertNext = (dpl) => this.next = dpl.setNext(this.next);
     }
 
     setNext(dpl){
